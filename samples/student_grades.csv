@@ -1,0 +1,52 @@
+student_id,enrollment_date,program,year,gender,study_hours_per_week,attendance_pct,assignment_score,midterm_score,final_grade,scholarship
+S001,2024-09-02,Computer Science,1,F,18,95,82,78,84,True
+S002,2024-09-02,Mathematics,1,M,22,98,91,88,93,True
+S003,2024-09-03,Computer Science,1,M,8,72,55,48,52,False
+S004,2024-09-03,Business,1,F,12,80,68,65,70,False
+S005,2024-09-04,Mathematics,1,F,25,99,95,92,96,True
+S006,2024-09-04,Engineering,1,M,15,85,75,72,77,False
+S007,2024-09-05,Engineering,1,F,17,90,80,76,82,False
+S008,2024-09-05,Business,1,M,6,60,45,40,48,False
+S009,2024-09-06,Computer Science,2,M,20,93,88,84,89,True
+S010,2024-09-06,Mathematics,2,F,24,97,93,90,94,True
+S011,2024-09-07,Engineering,2,M,14,82,72,69,74,False
+S012,2024-09-07,Business,2,F,10,75,62,58,64,False
+S013,2024-09-08,Computer Science,2,F,19,91,85,81,87,True
+S014,2024-09-08,Mathematics,2,M,23,96,90,87,92,True
+S015,2024-09-09,Engineering,3,F,16,88,78,74,80,False
+S016,2024-09-09,Business,3,M,11,77,65,61,67,False
+S017,2024-09-10,Computer Science,3,M,21,94,87,83,88,True
+S018,2024-09-10,Mathematics,3,F,26,99,96,93,97,True
+ S019 ,2024-09-11,Engineering,3,M,13,80,70,67,72,False
+S020,2024-09-11,Business,3,F,9,72,58,54,60,False
+S021,2024-09-12,Computer Science,4,F,22,95,89,85,90,True
+S022,2024-09-12,Mathematics,4,M,27,99,97,94,98,True
+S023,2024-09-13,Engineering,4,F,17,89,81,77,83,False
+S024,2024-09-13,Business,4,M,7,65,50,45,55,False
+S025,2024-09-14,Computer Science,1,M,19,92,86,82,87,True
+S026,2024-09-14,Mathematics,1,F,24,98,94,91,95,True
+S027,2024-09-15,Engineering,2,M,15,86,76,73,78,False
+S028,2024-09-15,Business,2,F,11,78,66,62,68,False
+S029,2024-09-16,Computer Science,2,F,20,93,87,83,88,True
+S030,2024-09-16,Mathematics,3,M,25,98,95,92,96,True
+S031,2024-09-17,Engineering,3,F,18,91,82,78,84,False
+S032,2024-09-17,Business,3,M,10,74,60,56,62,False
+S033,2024-09-18,Computer Science,4,M,21,94,88,84,89,True
+S034,2024-09-18,Mathematics,4,F,26,99,96,93,97,True
+S035,2024-09-19,Engineering,1,M,14,83,73,70,75,False
+S036,2024-09-19,Business,1,F,12,79,67,63,69,False
+S037,2024-09-20,Computer Science,1,F,19,92,85,81,86,True
+S038,2024-09-20,Mathematics,1,M,23,97,92,89,93,True
+S039,2024-09-21,Engineering,2,F,16,87,77,74,79,False
+S040,2024-09-21,Business,2,M,8,68,52,48,54,False
+S001,2024-09-02,Computer Science,1,F,18,95,82,78,84,True
+S041,,Computer Science,2,M,,90,83,79,85,True
+S042,2024-09-22,Mathematics,2,F,22,,89,86,91,True
+S043,2024-09-23,Engineering,3,M,17,88,,75,81,False
+S044,2024-09-23,Business,3,F,,76,64,60,,False
+S045,2024-09-24,Computer Science,3,M,150,93,88,84,89,True
+S046,2024-09-24,Mathematics,3,F,25,99,96,93,250,True
+S047,2024-09-25,Engineering,4,M,15,85,75,72,77,False
+S048,2024-09-25,Business,4,F,10,73,59,55,61,False
+S049,2024-09-26,Computer Science,4,F,21,94,88,84,89,True
+S050,2024-09-26,Mathematics,4,M,28,99,98,95,99,True
