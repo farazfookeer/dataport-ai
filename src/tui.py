@@ -782,7 +782,8 @@ An AI-powered ingestion layer for Tableau. Drop in a CSV or Excel file and it wi
 
 The narration step uses Claude. You bring your own key (BYOK):
 
-  • Go to [link=https://console.anthropic.com]console.anthropic.com[/link] and sign up
+  • Go to [bold]console.anthropic.com[/bold] and sign up
+    (or click the "🔗 Don't have a key?" button on the setup screen)
   • Settings → API keys → 'Create Key'
   • Paste it into the API key field in this app
   • Toggle 'Save key to .env' so you only have to do this once

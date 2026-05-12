@@ -88,29 +88,9 @@ In the app, paste the key into the **API key** field. Toggle **"Save key to `.en
 
 **Double-click `Dataport AI.bat`** in this folder.
 
-You'll see a full-screen interface like this:
+You'll see a full-screen interface:
 
-```
-┌──────────────────────────────────────────────────────────────────┐
-│    📊  D A T A P O R T   A I   ·   f o r   T a b l e a u       │
-├─────────────────────────────────────┬───────────────────────────┤
-│ 📂 Source                           │ ⚡ Pipeline               │
-│   [samples/student_grades.csv  ]    │   ① INGEST                │
-│   ✓ CSV · 2.8KB                     │   ② PROFILE               │
-│                                     │   ③ CLEANSE               │
-│ 🔑 Anthropic credentials (BYOK)     │   ④ INSIGHTS              │
-│   [sk-ant-•••••••••••• ]            │   ⑤ NARRATE  (Claude)     │
-│   ✓ sk-ant-…aB9X                    │   ⑥ EXPORT                │
-│   [ 🔗 Don't have a key? ]          │                           │
-│   Model: [claude-sonnet-4-6  ]      │ 📦 Output bundle          │
-│   [○] Save key to .env              │   report.html             │
-│                                     │   cleaned.hyper           │
-│ ⚙ Options                           │   cleaned.csv             │
-│   Cleanse: [Auto-clean    ▼]        │   insights.json           │
-│                                     │   ...                     │
-└─────────────────────────────────────┴───────────────────────────┘
-            [ Help (F1) ]  [ Quit ]  [ ▶ Run pipeline ]
-```
+![Setup screen](docs/screenshots/01_setup.svg)
 
 ### Steps
 
@@ -118,7 +98,23 @@ You'll see a full-screen interface like this:
 2. **Paste your API key** (one time — toggle "Save to .env" to remember)
 3. Click **▶ Run pipeline** (or press **Ctrl+R**)
 
-The next screen shows live progress. When it finishes, you'll see a category breakdown and a button to **📂 Open report**.
+#### Live progress screen
+
+Each pipeline stage streams its log in real-time, and the timeline at the top fills in as each stage completes.
+
+![Run screen](docs/screenshots/03_run.svg)
+
+#### Results screen
+
+When the run finishes you see a category breakdown, output file list with sizes, and shortcuts to open the report.
+
+![Results screen](docs/screenshots/04_results.svg)
+
+#### Built-in help (press `F1`)
+
+Everything you need to know without leaving the terminal — what each step does, how to get an API key, troubleshooting tips.
+
+![Help screen](docs/screenshots/02_help.svg)
 
 ### Keyboard shortcuts
 
