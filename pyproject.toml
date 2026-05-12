@@ -1,7 +1,7 @@
 [project]
-name = "tableau-connector"
+name = "dataport-ai"
 version = "0.1.0"
-description = "Profile, cleanse, and narrate spreadsheet data into Tableau-ready extracts"
+description = "Dataport AI for Tableau — AI-powered data ingestion: profile, cleanse, and narrate spreadsheets into Tableau-ready extracts"
 requires-python = ">=3.10"
 dependencies = [
     "pandas>=2.2",
@@ -18,8 +18,8 @@ dependencies = [
 ]
 
 [project.scripts]
-connector = "src.cli:app"
-connector-tui = "src.tui:main"
+dataport = "src.cli:app"
+dataport-tui = "src.tui:main"
 
 [build-system]
 requires = ["setuptools>=68"]

@@ -1,5 +1,5 @@
 @echo off
-REM Tableau Connector -- one-time installer for Windows.
+REM Dataport AI for Tableau -- one-time installer for Windows.
 REM
 REM Double-click this file (or run it from cmd / PowerShell) to install.
 REM It will create a double-clickable launcher when finished.
@@ -10,13 +10,13 @@ cd /d "%~dp0"
 
 echo.
 echo ============================================================
-echo  Tableau Connector -- Setup
+echo  Dataport AI for Tableau -- Setup
 echo ============================================================
 echo  This installer will:
 echo    1. Check that Python 3.10+ is available
 echo    2. Create an isolated Python environment in .\.venv
 echo    3. Install the dependencies (about 200MB, 1-2 minutes)
-echo    4. Create a double-clickable launcher: 'Tableau Connector.bat'
+echo    4. Create a double-clickable launcher: 'Dataport AI.bat'
 echo.
 echo  You only need to run this once.
 echo ------------------------------------------------------------
@@ -77,11 +77,11 @@ echo + Dependencies installed
 
 REM --- create launcher ------------------------------------------
 
-set "LAUNCHER=Tableau Connector.bat"
+set "LAUNCHER=Dataport AI.bat"
 
 (
   echo @echo off
-  echo REM Double-click me to launch the Tableau Connector.
+  echo REM Double-click me to launch the Dataport AI for Tableau.
   echo chcp 65001 ^>nul
   echo cd /d "%%~dp0"
   echo if not exist ".venv" ^(
@@ -111,11 +111,11 @@ echo  Next steps:
 echo.
 echo    1. Get an Anthropic API key
 echo       https://console.anthropic.com/settings/keys
-echo       (sign up, then "Create Key". The connector uses this
+echo       (sign up, then "Create Key". Dataport AI uses this
 echo        to generate data stories from your spreadsheets.)
 echo.
 echo    2. Launch the app
-echo       Double-click 'Tableau Connector.bat' in this folder.
+echo       Double-click 'Dataport AI.bat' in this folder.
 echo.
 echo    3. Optional: drop CSV/Excel files into the 'samples' folder
 echo       so they show up easily in the file picker.

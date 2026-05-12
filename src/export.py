@@ -104,7 +104,7 @@ REPORT_TEMPLATE = """<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Tableau Connector Report — {{ source_name }}</title>
+<title>Dataport AI Report — {{ source_name }}</title>
 <style>
   :root { color-scheme: light dark; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
@@ -134,7 +134,7 @@ REPORT_TEMPLATE = """<!doctype html>
 </style>
 </head>
 <body>
-<h1>📊 Tableau Connector Report</h1>
+<h1>📊 Dataport AI for Tableau — Run Report</h1>
 <div class="meta">{{ source_name }} · generated {{ generated_at }}</div>
 
 <h2>Dataset overview</h2>

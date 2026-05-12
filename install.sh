@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Tableau Connector — one-time installer for macOS and Linux.
+# Dataport AI for Tableau — one-time installer for macOS and Linux.
 #
 # Run this once: ./install.sh
 # It will set up everything and create a double-clickable launcher.
@@ -20,13 +20,13 @@ hr()     { printf "────────────────────�
 # ──────────────────────────── banner ─────────────────────────────
 
 clear
-bold "📊 Tableau Connector — Setup"
+bold "📊 Dataport AI for Tableau — Setup"
 hr
 echo "This installer will:"
 echo "  1. Check that Python 3.10+ is available"
 echo "  2. Create an isolated Python environment in ./.venv"
 echo "  3. Install the dependencies (~200MB, takes 1–2 minutes)"
-echo "  4. Create a double-clickable launcher: 'Tableau Connector.command'"
+echo "  4. Create a double-clickable launcher: 'Dataport AI.command'"
 echo
 echo "You only need to run this once."
 hr
@@ -75,10 +75,10 @@ green "✓ Dependencies installed"
 
 # ──────────────────────────── launcher ───────────────────────────
 
-LAUNCHER="Tableau Connector.command"
+LAUNCHER="Dataport AI.command"
 cat > "$LAUNCHER" <<'LAUNCHER_EOF'
 #!/usr/bin/env bash
-# Double-click me to launch the Tableau Connector.
+# Double-click me to launch the Dataport AI for Tableau.
 cd "$(dirname "$0")"
 
 if [ ! -d ".venv" ]; then
@@ -109,11 +109,11 @@ echo "Next steps:"
 echo
 yellow "  1. Get an Anthropic API key"
 echo "     → https://console.anthropic.com/settings/keys"
-echo "     (sign up, then 'Create Key'. The connector needs this to"
+echo "     (sign up, then 'Create Key'. Dataport AI needs this to"
 echo "      generate data stories from your spreadsheets.)"
 echo
 yellow "  2. Launch the app"
-echo "     → Double-click 'Tableau Connector.command' in this folder"
+echo "     → Double-click 'Dataport AI.command' in this folder"
 echo
 yellow "  3. (Optional) Drop CSV/Excel files into the 'samples' folder"
 echo "     so they show up easily in the file picker."

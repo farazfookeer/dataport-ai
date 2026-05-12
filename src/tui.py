@@ -1,4 +1,4 @@
-"""Textual TUI for the Tableau Connector.
+"""Textual TUI for Dataport AI for Tableau.
 
 Four screens:
   1. Setup    — Two-pane setup: form on the left, pipeline preview on the right
@@ -187,8 +187,8 @@ class SetupScreen(Screen):
 
     def compose(self) -> ComposeResult:
         yield Header()
-        yield Static("📊  T A B L E A U   C O N N E C T O R", id="title-bar")
-        yield Static("profile · cleanse · narrate · export", id="subtitle-bar")
+        yield Static("📊  D A T A P O R T   A I   ·   f o r   T a b l e a u", id="title-bar")
+        yield Static("AI-powered data ingestion · profile · cleanse · narrate · export", id="subtitle-bar")
 
         with Container(id="main-grid"):
             # ── LEFT pane: form ──
@@ -766,9 +766,9 @@ class ErrorScreen(Screen):
 # ───────────────────────────── Help screen ──────────────────────────────
 
 
-HELP_TEXT = """[bold cyan]What is the Tableau Connector?[/bold cyan]
+HELP_TEXT = """[bold cyan]What is Dataport AI for Tableau?[/bold cyan]
 
-A friendly pre-processor for Tableau. Drop in a CSV or Excel file and it will:
+An AI-powered ingestion layer for Tableau. Drop in a CSV or Excel file and it will:
 
   [yellow]1.[/yellow] [bold]Profile[/bold] the data — detect types, missing values, duplicates, outliers
   [yellow]2.[/yellow] [bold]Cleanse[/bold] it — every fix is logged so you can defend each decision
@@ -877,8 +877,8 @@ class HelpScreen(Screen):
 
 
 class ConnectorApp(App):
-    TITLE = "Tableau Connector"
-    SUB_TITLE = "Profile · Cleanse · Narrate · Export"
+    TITLE = "Dataport AI for Tableau"
+    SUB_TITLE = "AI-powered data ingestion · Profile · Cleanse · Narrate · Export"
     BINDINGS = [Binding("ctrl+q", "quit", "Quit", priority=True, show=False)]
 
     def on_mount(self) -> None:

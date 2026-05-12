@@ -1,6 +1,6 @@
-# 📊 Tableau Connector
+# 📊 Dataport AI for Tableau
 
-**Turn messy CSV/Excel files into Tableau-ready data with auto-generated insights.**
+**AI-powered data ingestion: turn messy CSV/Excel files into Tableau-ready data with auto-generated insights.**
 
 Drop in a spreadsheet → get a cleaned Tableau extract, a categorized list of data stories, and a polished HTML report. No coding required.
 
@@ -43,7 +43,7 @@ your_data.csv  →  profile · cleanse · narrate · export  →  Tableau Deskto
    ./install.sh
    ```
 
-When it finishes, you'll have a file named **`Tableau Connector.command`** in this folder.
+When it finishes, you'll have a file named **`Dataport AI.command`** in this folder.
 
 ### Windows
 
@@ -51,7 +51,7 @@ When it finishes, you'll have a file named **`Tableau Connector.command`** in th
 2. **Double-click `install.bat`**
 3. Wait for it to finish (a console window will appear — that's normal)
 
-When it finishes, you'll have a file named **`Tableau Connector.bat`** in this folder.
+When it finishes, you'll have a file named **`Dataport AI.bat`** in this folder.
 
 ### Requirements
 
@@ -63,11 +63,11 @@ When it finishes, you'll have a file named **`Tableau Connector.bat`** in this f
 
 ## Get an Anthropic API key (BYOK)
 
-The connector uses Claude to write your data stories. You need your own API key.
+Dataport AI uses Claude to write your data stories. You need your own API key.
 
 1. Go to **[console.anthropic.com](https://console.anthropic.com)** and sign up (free).
 2. Once signed in, go to **Settings → API keys**.
-3. Click **Create Key**, give it a name (e.g. "Tableau Connector"), and copy the key.
+3. Click **Create Key**, give it a name (e.g. "Dataport AI"), and copy the key.
 4. The key starts with `sk-ant-...` — keep it secret.
 
 **Cost:** a typical run costs about **$0.01 – $0.05** in API credits. Anthropic gives new accounts a small free credit balance — plenty for testing.
@@ -82,17 +82,17 @@ In the app, paste the key into the **API key** field. Toggle **"Save key to `.en
 
 ### macOS / Linux
 
-**Double-click `Tableau Connector.command`** in this folder.
+**Double-click `Dataport AI.command`** in this folder.
 
 ### Windows
 
-**Double-click `Tableau Connector.bat`** in this folder.
+**Double-click `Dataport AI.bat`** in this folder.
 
 You'll see a full-screen interface like this:
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│           📊  T A B L E A U   C O N N E C T O R                 │
+│    📊  D A T A P O R T   A I   ·   f o r   T a b l e a u       │
 ├─────────────────────────────────────┬───────────────────────────┤
 │ 📂 Source                           │ ⚡ Pipeline               │
 │   [samples/student_grades.csv  ]    │   ① INGEST                │
@@ -192,7 +192,7 @@ Or use an absolute path like `/Users/yourname/Desktop/data.csv` (Mac) or `C:\Use
 <details>
 <summary><strong>The launcher closes immediately on Windows</strong></summary>
 
-That means an error happened. Right-click `Tableau Connector.bat` → **Edit**, you'll see what went wrong. Common causes:
+That means an error happened. Right-click `Dataport AI.bat` → **Edit**, you'll see what went wrong. Common causes:
 
 - Python wasn't installed with "Add to PATH"
 - The `.venv` folder was deleted — re-run `install.bat`
@@ -205,7 +205,7 @@ That means an error happened. Right-click `Tableau Connector.bat` → **Edit**, 
 The CLI (no TUI) is also available after install:
 
 ```bash
-.venv/bin/connector run samples/student_grades.csv
+.venv/bin/dataport run samples/student_grades.csv
 ```
 
 Project layout:

@@ -29,12 +29,13 @@ app = typer.Typer(
 )
 
 BANNER = r"""
-  ╔════════════════════════════════════════════════════════╗
-  ║   ▀█▀ ▄▀█ █▄▄ █░░ █▀▀ ▄▀█ █░█   █▀▀ █▀█ █▄░█ █▄░█    ║
-  ║   ░█░ █▀█ █▄█ █▄▄ ██▄ █▀█ █▄█   █▄▄ █▄█ █░▀█ █░▀█    ║
-  ║                                                        ║
-  ║   profile · cleanse · narrate · export                ║
-  ╚════════════════════════════════════════════════════════╝
+  ╔════════════════════════════════════════════════════════════╗
+  ║                                                            ║
+  ║      D A T A P O R T   A I   ·   f o r   T a b l e a u    ║
+  ║                                                            ║
+  ║      profile · cleanse · narrate · export                  ║
+  ║                                                            ║
+  ╚════════════════════════════════════════════════════════════╝
 """
 
 
@@ -222,7 +223,7 @@ def run(
 @app.command()
 def version() -> None:
     """Print the installed version."""
-    typer.echo(f"tableau-connector {__version__}")
+    typer.echo(f"dataport-ai {__version__}")
 
 
 if __name__ == "__main__":
